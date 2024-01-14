@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2 img{
+    max-width: 50px;
+        margin-left: 10px;
+}
+
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(img/stop.png);
+    background-size: cover;
+    background-position: center;
+    top: 0.5px;
+    left: 10px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(img/check.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    color: #edeef0;
+}
+
+/* Speaker steve */
+.speaker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: rgb(159, 211, 241);
+}
+
+.speaker__avatar {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.speaker__fullname {
+    margin: 0;
+    text-align: center;
+}
+
+.speaker__bio {
+    margin: 0;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__item {
+    margin: 0 0.5rem;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: #333;
+}
+
+.buttons:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.buttons:active {
+    background-color: #000;
+    color: #fff;
+}
+
+.buttons:focus {
+    outline: 2px solid #333;
+}
+
+@media (min-width: 768px) {
+    .speaker {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .speaker__avatar {
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+
+    .speaker__fullname {
+        margin-top: 0;
+    }
+
+    .speaker__bio {
+        margin-top: 0;
+    }
+}
+
+@media(hover: hover) {
+    .buttons:hover {
+        background-color: #9c1010;
+        color: #fff;
+    }
+}

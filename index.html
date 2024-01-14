@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do list <img src="img/checklist.png" alt=""></h2>
+            <div class="row">
+                 <input type="text" id="input-box" placeholder="Add your text">
+                 <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+    </div>
+   
+<footer>
+    <article class="speaker">
+        <img aria-hidden="true" class="image speaker__avatar" src="/img/stevefff.png" alt="Checkmark" height="90">
+        <h2 class="speaker__fullname">Steve Edward Gomez</h2>
+        <p class="speaker__bio">Software Engineer, Encargado de la presidencia en IEEE UNTELS, Gestion de
+            proyectos de software, Desarrollo de aplicaciones web y moviles, Desarrollo de aplicaciones de escritorio,
+        </p>
+        <nav class="nav__list speaker__nav">
+            <div class="nav__item">
+                <a href="#" class="buttons">Website</a>
+            </div>
+            <div class="nav__item">
+                <a href="#" class="buttons" aria-label="Twitter">🐦</a>
+            </div>
+            <div class="nav__item">
+                <a href="#" class="buttons" aria-label="Mastodon">🐘</a>
+            </div>
+        </nav>
+    </article>
+</footer>
+<script src="script.js"></script>
+
+</body>
+
+</html>
